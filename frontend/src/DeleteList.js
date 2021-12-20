@@ -6,11 +6,11 @@ const DeleteList = (props) => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  
   return (
-    <React.Fragment>
+    <>
       <Button
-        variant="primary"
+        variant="warning"
         onClick={(event) => {
           handleShow();
           props.getList(event, props.elementId);
@@ -55,7 +55,7 @@ const DeleteList = (props) => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </React.Fragment>
+    </>
   );
 };
 
